@@ -1,0 +1,69 @@
+,Tipo,Palavra,Linha,Posicao_Inicio,Posicao_Fim,Quantidade,Quantidade_Por_Tipo
+0,Palavras Reservadas,program,1,0,7,1,1/1
+1,Símbolos,;,1,14,15,2,1/2
+2,Palavras Reservadas,uses,2,16,20,3,2/3
+3,Símbolos,;,2,24,25,4,2/4
+4,Palavras Reservadas,in,3,34,36,5,3/5
+5,Palavras Reservadas,var,3,26,29,6,4/6
+6,Símbolos,",",3,31,32,7,3/7
+7,Símbolos,:,3,33,34,8,4/8
+8,Símbolos,;,3,41,42,9,5/9
+9,Números Inteiros,1,4,49,50,10,1/10
+10,Símbolos,;,4,50,51,11,6/11
+11,Palavras Reservadas,begin,5,52,57,12,5/12
+12,Palavras Reservadas,in,5,55,57,13,6/13
+13,Símbolos,;,6,79,80,14,7/14
+14,Símbolos,;,7,87,88,15,8/15
+15,Números Inteiros,1,8,96,97,16,2/16
+16,Números Inteiros,1000000,8,101,108,17,3/17
+17,Palavras Reservadas,do,8,109,111,18,7/18
+18,Palavras Reservadas,for,8,89,92,19,8/19
+19,Palavras Reservadas,in,8,112,114,20,9/20
+20,Palavras Reservadas,or,8,90,92,21,10/21
+21,Palavras Reservadas,to,8,98,100,22,11/22
+22,Símbolos,=,8,95,96,23,9/23
+23,Símbolos,:=,8,94,96,24,10/24
+24,Símbolos,:,8,94,95,25,11/25
+25,Símbolos,;,8,117,118,26,12/26
+26,Variáveis,a,8,89,96,27,1/27
+27,Palavras Reservadas,and,9,120,123,28,12/28
+28,Palavras Reservadas,do,9,122,124,29,13/29
+29,Símbolos,;,9,128,129,30,13/30
+30,Números Inteiros,1,10,130,131,31,4/31
+31,Símbolos,:,10,131,132,32,14/32
+32,Números Inteiros,4,11,143,144,33,5/33
+33,Números Inteiros,+1,11,145,147,34,6/34
+34,Palavras Reservadas,and,11,137,140,35,14/35
+35,Palavras Reservadas,do,11,139,141,36,15/36
+36,Símbolos,+,11,145,146,37,15/37
+37,Símbolos,=,11,135,136,38,16/38
+38,Símbolos,:=,11,134,136,39,17/39
+39,Símbolos,:,11,134,135,40,18/40
+40,Símbolos,;,11,147,148,41,19/41
+41,Variáveis,a,11,133,136,42,2/42
+42,Números Inteiros,1,12,154,155,43,7/43
+43,Palavras Reservadas,if,12,149,151,44,16/44
+44,Palavras Reservadas,then,12,156,160,45,17/45
+45,Símbolos,=,12,153,154,46,20/46
+46,Símbolos,;,12,181,182,47,21/47
+47,Números Inteiros,2,13,188,189,48,8/48
+48,Palavras Reservadas,if,13,183,185,49,18/49
+49,Palavras Reservadas,then,13,190,194,50,19/50
+50,Símbolos,=,13,187,188,51,22/51
+51,Símbolos,;,13,214,215,52,23/52
+52,Números Inteiros,3,14,221,222,53,9/53
+53,Palavras Reservadas,if,14,216,218,54,20/54
+54,Palavras Reservadas,then,14,223,227,55,21/55
+55,Símbolos,=,14,220,221,56,24/56
+56,Símbolos,;,14,249,250,57,25/57
+57,Números Inteiros,4,15,256,257,58,10/58
+58,Palavras Reservadas,if,15,251,253,59,22/59
+59,Palavras Reservadas,then,15,258,262,60,23/60
+60,Símbolos,=,15,255,256,61,26/61
+61,Símbolos,;,15,285,286,62,27/62
+62,Símbolos,;,16,297,298,63,28/63
+63,Números Inteiros,1,17,304,305,64,11/64
+64,Palavras Reservadas,to,17,301,303,65,24/65
+65,Símbolos,;,17,305,306,66,29/66
+66,Palavras Reservadas,end,18,307,310,67,25/67
+67,Símbolos,.,18,310,311,68,30/68

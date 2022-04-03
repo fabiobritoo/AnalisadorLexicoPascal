@@ -1,0 +1,24 @@
+.;fim de programa, decimal, seleção de membro em record
+( );precedência, parâmetro
++;adição, concatenação
+-;subtração, negação
+/;divisão real
+=;igualdade, declaração
+<>;desigualdade ou diferente
+>;maior que
+<;menor que
+>=;maior ou igual
+<=;menor ou igual
+*;multiplicação
+:=;atribuição
+#;prefixo que identifica o valor ordinal de caracter (0..255 - tabela ASCII)
+,;separador de lista
+‘;delimitador de sequência de caracteres
+$;prefixo que indica um número hexadecimal
+:;declaração de tipo
+..;identifica intervalo em tipo ordinal simples ou faixa de valores
+";";separa declarações e indica fim de definições, cabeçalhos, blocos, ...
+[ ];referência a um elemento de um array
+(. .);referência a um elemento de um array
+{ };delimita um comentário dentro de um programa
+(* *);delimita um comentário dentro de um programa

@@ -1,0 +1,31 @@
+,Tipo,Palavra,Linha,Posicao_Inicio,Posicao_Fim,Quantidade,Quantidade_Por_Tipo
+0,Números Inteiros,1,4,69,70,1,1/1
+1,Números Inteiros,2,4,71,72,2,2/2
+2,Números Inteiros,3,4,73,74,3,3/3
+3,Números Inteiros,4,4,75,76,4,4/4
+4,Números Inteiros,5,4,77,78,5,5/5
+5,Números Inteiros,100000,11,158,164,6,6/6
+6,Números Inteiros,1,13,177,178,7,7/7
+7,Números Inteiros,3,14,190,191,8,8/8
+8,Números Inteiros,+1,14,192,194,9,9/9
+9,Variáveis,e,14,180,183,10,1/10
+10,Números Inteiros,200,15,206,209,11,10/11
+11,Números Inteiros,+1,15,210,212,12,11/12
+12,Variáveis,b,15,196,199,13,2/13
+13,Números Inteiros,200,16,224,227,14,12/14
+14,Números Inteiros,+1,16,228,230,15,13/15
+15,Variáveis,c,16,214,217,16,3/16
+16,Números Inteiros,1,17,237,238,17,14/17
+17,Variáveis,d,17,232,247,18,4/18
+18,Números Inteiros,2,18,257,258,19,15/19
+19,Variáveis,d,18,252,267,20,5/20
+20,Números Inteiros,3,19,277,278,21,16/21
+21,Variáveis,d,19,272,287,22,6/22
+22,Números Inteiros,3,20,307,308,23,17/23
+23,Números Inteiros,1,21,316,317,24,18/24
+24,Números Inteiros,2,22,343,344,25,19/25
+25,Números Inteiros,3,23,368,369,26,20/26
+26,Números Inteiros,3,24,398,399,27,21/27
+27,Números Inteiros,-1,34,593,595,28,22/28
+28,Variáveis,right,34,581,588,29,7/29
+29,Números Inteiros,1,37,652,653,30,23/30
