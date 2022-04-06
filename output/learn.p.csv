@@ -1,31 +1,95 @@
-,Tipo,Palavra,Linha,Posicao_Inicio,Posicao_Fim,Quantidade,Quantidade_Por_Tipo
-0,Números Inteiros,1,4,69,70,1,1/1
-1,Números Inteiros,2,4,71,72,2,2/2
-2,Números Inteiros,3,4,73,74,3,3/3
-3,Números Inteiros,4,4,75,76,4,4/4
-4,Números Inteiros,5,4,77,78,5,5/5
-5,Números Inteiros,100000,11,158,164,6,6/6
-6,Números Inteiros,1,13,177,178,7,7/7
-7,Números Inteiros,3,14,190,191,8,8/8
-8,Números Inteiros,+1,14,192,194,9,9/9
-9,Variáveis,e,14,180,183,10,1/10
-10,Números Inteiros,200,15,206,209,11,10/11
-11,Números Inteiros,+1,15,210,212,12,11/12
-12,Variáveis,b,15,196,199,13,2/13
-13,Números Inteiros,200,16,224,227,14,12/14
-14,Números Inteiros,+1,16,228,230,15,13/15
-15,Variáveis,c,16,214,217,16,3/16
-16,Números Inteiros,1,17,237,238,17,14/17
-17,Variáveis,d,17,232,247,18,4/18
-18,Números Inteiros,2,18,257,258,19,15/19
-19,Variáveis,d,18,252,267,20,5/20
-20,Números Inteiros,3,19,277,278,21,16/21
-21,Variáveis,d,19,272,287,22,6/22
-22,Números Inteiros,3,20,307,308,23,17/23
-23,Números Inteiros,1,21,316,317,24,18/24
-24,Números Inteiros,2,22,343,344,25,19/25
-25,Números Inteiros,3,23,368,369,26,20/26
-26,Números Inteiros,3,24,398,399,27,21/27
-27,Números Inteiros,-1,34,593,595,28,22/28
-28,Variáveis,right,34,581,588,29,7/29
-29,Números Inteiros,1,37,652,653,30,23/30
+,Classe,token,linha,"quantidade (1ª coluna(qtdade da classe), 2ª qtdade de tokens)"
+0,palavra reservada,program,1,01/01
+1,pontuação,;,1,01/02
+2,palavra reservada,uses,2,02/03
+3,pontuação,;,2,02/04
+4,palavra reservada,var,3,03/05
+5,variável,a,3,01/06
+6,pontuação,:,3,03/07
+7,pontuação,;,3,04/08
+8,pontuação,:,3,05/09
+9,pontuação,;,3,06/10
+10,inteiro,1,4,01/11
+11,inteiro,2,4,02/12
+12,inteiro,3,4,03/13
+13,inteiro,4,4,04/14
+14,inteiro,5,4,05/15
+15,pontuação,;,4,07/16
+16,palavra reservada,begin,5,04/17
+17,pontuação,;,6,08/18
+18,pontuação,;,7,09/19
+19,pontuação,;,8,10/20
+20,palavra reservada,repeat,9,05/21
+21,pontuação,;,10,11/22
+22,palavra reservada,until,11,06/23
+23,inteiro,100000,11,06/24
+24,pontuação,;,11,12/25
+25,pontuação,;,12,13/26
+26,inteiro,1,13,07/27
+27,pontuação,:,13,14/28
+28,operadores,:=,14,01/29
+29,inteiro,3,14,08/30
+30,inteiro,+1,14,09/31
+31,pontuação,;,14,15/32
+32,operadores,:=,15,02/33
+33,inteiro,200,15,10/34
+34,inteiro,+1,15,11/35
+35,pontuação,;,15,16/36
+36,operadores,:=,16,03/37
+37,inteiro,200,16,12/38
+38,inteiro,+1,16,13/39
+39,pontuação,;,16,17/40
+40,palavra reservada,if,17,07/41
+41,inteiro,1,17,14/42
+42,palavra reservada,then,17,08/43
+43,operadores,:=,17,04/44
+44,pontuação,;,17,18/45
+45,palavra reservada,if,18,09/46
+46,inteiro,2,18,15/47
+47,palavra reservada,then,18,10/48
+48,operadores,:=,18,05/49
+49,pontuação,;,18,19/50
+50,palavra reservada,if,19,11/51
+51,inteiro,3,19,16/52
+52,palavra reservada,then,19,12/53
+53,operadores,:=,19,06/54
+54,pontuação,;,19,20/55
+55,pontuação,:,20,21/56
+56,inteiro,3,20,17/57
+57,pontuação,;,20,22/58
+58,palavra reservada,if,21,13/59
+59,inteiro,1,21,18/60
+60,palavra reservada,then,21,14/61
+61,pontuação,;,21,23/62
+62,palavra reservada,if,22,15/63
+63,inteiro,2,22,19/64
+64,palavra reservada,then,22,16/65
+65,pontuação,;,22,24/66
+66,palavra reservada,if,23,17/67
+67,inteiro,3,23,20/68
+68,palavra reservada,then,23,18/69
+69,pontuação,;,23,25/70
+70,pontuação,:,24,26/71
+71,inteiro,3,24,21/72
+72,pontuação,;,24,27/73
+73,pontuação,;,25,28/74
+74,variável,a,26,02/75
+75,pontuação,;,26,29/76
+76,palavra reservada,if,27,19/77
+77,variável,a,27,03/78
+78,palavra reservada,then,27,20/79
+79,palavra reservada,begin,28,21/80
+80,pontuação,;,29,30/81
+81,pontuação,;,30,31/82
+82,palavra reservada,end,31,22/83
+83,palavra reservada,else,32,23/84
+84,palavra reservada,begin,33,24/85
+85,operadores,:=,34,07/86
+86,inteiro,-1,34,22/87
+87,pontuação,;,34,32/88
+88,pontuação,;,35,33/89
+89,palavra reservada,end,36,25/90
+90,pontuação,;,36,34/91
+91,inteiro,1,37,23/92
+92,pontuação,;,37,35/93
+93,palavra reservada,end,38,26/94

@@ -14,6 +14,7 @@ Desenvolvimento de um Analisador Léxico para a linguagem Pascal
 
 Abra cmd na pasta
 
+- pip install venv (Se ainda não tiver instalado)
 - python -m venv env
 - cd env/Scripts
 - activate.bat
