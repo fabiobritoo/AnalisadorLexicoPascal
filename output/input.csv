@@ -1,0 +1,15 @@
+Classe,token,linha,"quantidade (1ª coluna(qtdade da classe), 2ª qtdade de tokens)"
+palavra reservada,begin,1,01/01
+palavra reservada,end,1,02/02
+palavra reservada,if,1,03/03
+pontuação,;,1,01/04
+pontuação,:,1,02/05
+operadores,:=,1,01/06
+palavra reservada,while,2,04/07
+palavra reservada,for,2,05/08
+palavra reservada,then,2,06/09
+inteiro,20,2,01/10
+real,5.5,2,01/11
+variável,x1,2,01/12
+variável,a,2,02/13
+palavra reservada,program,2,07/14
