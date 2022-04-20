@@ -1,9 +1,6 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
 # %%
 import pandas as pd
 import re
-
 
 # %%
 from tabulate import tabulate
@@ -14,7 +11,6 @@ from tabulate import tabulate
 # %%
 nome_arquivo = "input.p"
 codigo_entrada = open("lib/input/" + nome_arquivo, "r", encoding="utf8").read()
-
 
 # %%
 print(codigo_entrada)
@@ -27,9 +23,8 @@ rows = []
 df = pd.DataFrame(rows, columns=["Tipo", "Palavra", "Linha", "Posicao_Inicio", "Posicao_Fim"])
 df
 
-
 # %%
-def procurar_palavras(row, tipo, lista_palavras = ["entrada"]):
+def procurar_palavras(rows, tipo, lista_palavras = ["entrada"]):
     for idx, palavra in enumerate(lista_palavras):
         if tipo in ["operadores","pontuação"]:
             regex = rf"(?<!:){re.escape(palavra)}(?!=)"
@@ -57,7 +52,6 @@ palavra_procurada = pd.read_csv("lib/model/palavras_reservadas.csv", header=None
 palavra_procurada = list(palavra_procurada[0])
 tipo = "palavra reservada"
 
-
 # %%
 rows = procurar_palavras(rows, tipo, palavra_procurada)
 
@@ -68,7 +62,6 @@ rows = procurar_palavras(rows, tipo, palavra_procurada)
 palavra_procurada = pd.read_csv("lib/model/variaveis.csv", header=None)
 palavra_procurada = list(palavra_procurada[0])
 tipo = "variável"
-
 
 # %%
 rows = procurar_palavras(rows, tipo, palavra_procurada)
@@ -81,7 +74,6 @@ palavra_procurada = pd.read_csv("lib/model/operadores.csv", header=None)
 palavra_procurada = list(palavra_procurada[0])
 tipo = "operadores"
 
-
 # %%
 rows = procurar_palavras(rows, tipo, palavra_procurada)
 
@@ -93,7 +85,6 @@ palavra_procurada = pd.read_csv("lib/model/pontuacoes.csv", header=None)
 palavra_procurada = list(palavra_procurada[0])
 tipo = "pontuação"
 
-
 # %%
 rows = procurar_palavras(rows, tipo, palavra_procurada)
 
@@ -102,7 +93,6 @@ rows = procurar_palavras(rows, tipo, palavra_procurada)
 
 # %%
 tipo = "inteiro"
-
 
 # %%
 rows = procurar_palavras(rows, tipo)
@@ -113,7 +103,6 @@ rows = procurar_palavras(rows, tipo)
 # %%
 tipo = "real"
 
-
 # %%
 rows = procurar_palavras(rows, tipo)
 
@@ -122,7 +111,6 @@ rows = procurar_palavras(rows, tipo)
 
 # %%
 df = pd.DataFrame(rows, columns=["Tipo", "Palavra", "Linha", "Posicao_Inicio", "Posicao_Fim"])
-
 
 # %%
 df = df.sort_values(by=['Posicao_Inicio']).reset_index(drop=True)
@@ -133,7 +121,6 @@ df = df.sort_values(by=['Posicao_Inicio']).reset_index(drop=True)
 # %%
 df["Quantidade"] = df.index + 1
 df["Quantidade_Por_Tipo"] = ""
-
 
 # %%
 for tipo in df["Tipo"].unique():
@@ -149,12 +136,10 @@ for tipo in df["Tipo"].unique():
 total_linhas = df["Linha"].max()
 total_tokens = df["Quantidade"].max()
 
-
 # %%
 ## Isolando colunas desejadas
 
 df = df[['Tipo','Palavra','Linha','Quantidade_Por_Tipo']]
-
 
 # %%
 ## Renomeando colunas
@@ -166,19 +151,23 @@ df = df.rename(columns = {
     , 'Quantidade_Por_Tipo' : 'quantidade (1ª coluna(qtdade da classe), 2ª qtdade de tokens)'
     })
 
-
 # %%
 df
 
-
 # %%
 df_agrupado = df.groupby(by = 'Classe').size().reset_index(name='quantidade')
-
 
 # %%
 df_agrupado.loc[len(df_agrupado)] = ["Total linhas", total_linhas]
 df_agrupado.loc[len(df_agrupado)] = ["Total tokens", total_tokens]
 
+# %%
+df_agrupado["quantidade"] = df_agrupado["quantidade"].astype(str).str.zfill(2)
+
+# %%
+df_agrupado.loc[df_agrupado["Classe"]=="inteiro","Classe"] = "números inteiros"
+df_agrupado.loc[df_agrupado["Classe"]=="real","Classe"] = "números reais"
+df_agrupado.loc[df_agrupado["Classe"]=="variável","Classe"] = "variáveis"
 
 # %%
 df_agrupado
@@ -187,17 +176,18 @@ df_agrupado
 # ## Arquivo de Saída
 
 # %%
-nome_arquivo_saida = f'output/{nome_arquivo}.csv'
-df.to_csv(nome_arquivo_saida)
+nome_arquivo_saida = f'output/{nome_arquivo.split(".p")[0]}.csv'
+df.to_csv(nome_arquivo_saida, index = False)
 
+# %%
+nome_arquivo_saida = f'output/{nome_arquivo.split(".p")[0]}_stats.csv'
+df_agrupado.to_csv(nome_arquivo_saida, index = False)
 
 # %%
 print(df.to_markdown(index = False, tablefmt="fancy_grid"))
 
-
 # %%
 print(df_agrupado.to_markdown(index = False, tablefmt="fancy_grid"))
-
 
 # %%
 

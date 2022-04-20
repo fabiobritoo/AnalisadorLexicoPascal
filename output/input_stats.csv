@@ -1,9 +1,9 @@
 Classe,quantidade
-inteiro,1
-operadores,1
-palavra reservada,7
-pontuação,2
-real,1
-variável,2
-Total linhas,2
+números inteiros,01
+operadores,01
+palavra reservada,07
+pontuação,02
+números reais,01
+variáveis,02
+Total linhas,02
 Total tokens,14
